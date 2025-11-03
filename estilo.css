@@ -56,8 +56,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: rgb(255, 255, 255);
-  -webkit-text-stroke: 2px black;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 8rem 2rem;
   position: relative;
@@ -309,5 +308,6 @@ footer {
   border-radius: 10px;     /* Opcional: bordes redondeados */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra ligera */
 }
+
 
 
