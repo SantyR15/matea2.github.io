@@ -1,0 +1,310 @@
+/* === ESTILOS GENERALES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === ENCABEZADO === */
+header {
+  background-color: #005a05;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ffee58;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #c8e6c9;
+}
+
+/* === SECCIÓN HERO === */
+.hero {
+  background-image: url("matea2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #ffee58;
+  color: #2e7d32;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #fdd835;
+}
+
+/* === PRODUCTOS === */
+.productos {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.productos h2 {
+  color: #2e7d32;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem;
+  color: #388e3c;
+}
+
+.card p {
+  margin: 0 1rem 1.5rem;
+}
+
+/* === NOSOTROS === */
+.nosotros {
+  background-color: #e8f5e9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.nosotros h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+/* === CONTACTO === */
+.contacto {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .nosotros,
+  .contacto {
+    padding: 2.5rem 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* === EQUIPO === */
+.equipo {
+  padding: 4rem 2rem;
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.equipo h2 {
+  color: #2e7d32;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.empleados {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.empleado {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.empleado:hover {
+  transform: translateY(-5px);
+}
+
+.empleado img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.empleado h3 {
+  color: #2e7d32;
+  margin-bottom: 0.3rem;
+}
+
+.empleado p {
+  font-weight: bold;
+  color: #558b2f;
+  margin-bottom: 0.5rem;
+}
+
+.empleado span {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+}
+
+/* === RESPONSIVE EQUIPO === */
+@media (max-width: 700px) {
+  .empleados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .empleado {
+    width: 90%;
+  }
+}
+
+#ubicacion {
+  text-align: center;
+  margin: 40px 0;
+  color: #558b2f;
+}
+
+.mapa {
+  width: 80%;      /* Ajusta el tamaño según tu diseño */
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #ccc;  /* Opcional: bordes para la imagen */
+  border-radius: 10px;     /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra ligera */
+}
